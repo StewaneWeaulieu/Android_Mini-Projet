@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mini-Projet</string>
+
+
+    <string name="title_map">Map</string>
+    <string name="title_list">List</string>
+    <string name="title_account">Account</string>
+
+
+
+
+
+</resources>
