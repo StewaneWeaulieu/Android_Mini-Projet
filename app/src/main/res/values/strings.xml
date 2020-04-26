@@ -2,12 +2,57 @@
     <string name="app_name">Mini-Projet</string>
 
 
-    <string name="title_map">Map</string>
+    <string name="title_maps">Maps</string>
     <string name="title_list">List</string>
     <string name="title_account">Account</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="website">Site web de l\'entreprise</string>
+
+    <string name="opening_hours">Heures d\'ouvertures</string>
+
+    <string name="opening_hours_MON">Lundi</string>
+    <string name="opening_hours_TUE">Mardi</string>
+    <string name="opening_hours_WED">Mercredi</string>
+    <string name="opening_hours_THU">Jeudi</string>
+    <string name="opening_hours_FRI">Vendredi</string>
+    <string name="opening_hours_SAT">Samedi</string>
+    <string name="opening_hours_SUN">Dimanche</string>
+    <string name="close">Fermé</string>
+
+    <string name="place">Lieu</string>
+    <string name="reviews">Évaluations</string>
+    <string name="reviews_more">Voir plus d\'évaluation</string>
+    <string name="reviews_make">Laisser une évaluation</string>
+    <string name="connexion">Connexion</string>
+    <string name="connexion_info">Pour laisser une évluation, connectez-vous.</string>
+
+    <string name="comment">Commentaire</string>
+    <string name="add_picture">Ajouter une photo</string>
+    <string name="optional">(Facultatif)</string>
+    <string name="submit">SOUMETTRE</string>
+
+    <string name="kungry">Kungry</string>
+    <string name="kungry_connexion">Connexion</string>
+    <string name="to_connect">ME CONNECTER</string>
+    <string name="subscrib">Inscription</string>
+    <string name="to_signup">M\'INSCRIRE</string>
+    <string name="logout">DÉCONNEXION</string>
+    <string name="kungry_new">Nouveau avec Kungry?</string>
+    <string name="kungry_member">Déja abonnée?</string>
+    <string name="kungry_to_connect">Me connecter</string>
+    <string name="to_subscribe">M\'inscrire</string>
+    <string name="my_account">Mon compte</string>
+    <string name="name">Nom</string>
+    <string name="email">Courriel</string>
+    <string name="number_of_review">Nombre d\'évaluation attribuées</string>
+
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom</string>
+    <string name="password">Mot de passe</string>
 
 
 
-
-
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">AIzaSyCPMwL3Kp-YdqrbVtMEicEMCUaURzIQODg</string>
 </resources>

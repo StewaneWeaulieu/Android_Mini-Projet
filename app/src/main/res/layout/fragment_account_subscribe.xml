@@ -15,7 +15,7 @@
 
 
         <ImageView
-            android:id="@+id/account_background_image_view"
+            android:id="@+id/account_subscribe_background_image_view"
             android:layout_width="fill_parent"
             android:layout_height="550dp"
             android:scaleType="centerCrop"
@@ -30,9 +30,9 @@
 
             android:layout_height="0dp"
             android:background="@drawable/account_background"
-            app:layout_constraintBottom_toBottomOf="@+id/account_background_image_view"
+            app:layout_constraintBottom_toBottomOf="@+id/account_subscribe_background_image_view"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/account_background_image_view" />
+            app:layout_constraintTop_toTopOf="@+id/account_subscribe_background_image_view" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -42,47 +42,47 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/account_logo_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/account_subscribe_logo_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
 
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/australian_kangaroo_logo" />
 
         <TextView
-            android:id="@+id/account_kungry_textview"
+            android:id="@+id/account_subscribe_kungry_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_lt_bold"
             android:text="@string/kungry"
             android:textColor="@color/white"
-            android:textSize="30dp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/account_logo_image_view"
-            app:layout_constraintStart_toStartOf="@+id/account_logo_image_view"
-            app:layout_constraintTop_toBottomOf="@+id/account_logo_image_view" />
+            app:layout_constraintEnd_toEndOf="@+id/account_subscribe_logo_image_view"
+            app:layout_constraintStart_toStartOf="@+id/account_subscribe_logo_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_logo_image_view" />
 
         <TextView
-            android:id="@+id/account_subscribe_textview"
+            android:id="@+id/account_subscribe_subscribe_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="55dp"
-            android:text="@string/connexion"
+            android:layout_marginTop="43dp"
+            android:text="@string/subscrib"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account_kungry_textview" />
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_kungry_textview" />
 
 
         <EditText
-            android:id="@+id/account_email_edit_text"
+            android:id="@+id/account_subscribe_first_name_edit_text"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -91,8 +91,45 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:background="@drawable/round_corner"
-            android:drawableLeft="@drawable/ic_np_email"
-            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_subscribe_textview" />
+
+        <EditText
+            android:id="@+id/account_subscribe_last_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_first_name_edit_text" />
+
+
+        <EditText
+            android:id="@+id/account_subscribe_email_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_corner"
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -100,10 +137,10 @@
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_textview" />
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_last_name_edit_text" />
 
         <EditText
-            android:id="@+id/account_password_edit_text"
+            android:id="@+id/account_subscribe_password_edit_text"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -112,8 +149,6 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:background="@drawable/round_corner"
-            android:drawableLeft="@drawable/ic_np_password"
-            android:drawablePadding="10dp"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
@@ -121,10 +156,10 @@
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account_email_edit_text" />
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_email_edit_text" />
 
         <Button
-            android:id="@+id/account_connect_button"
+            android:id="@+id/account_subscribe_subscribe_button"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginStart="24dp"
@@ -133,42 +168,42 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:backgroundTint="@color/green"
-            android:text="@string/to_connect"
+            android:text="@string/to_signup"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account_password_edit_text" />
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_password_edit_text" />
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/account_connect_button"
-            app:layout_constraintStart_toStartOf="@+id/account_connect_button"
-            app:layout_constraintTop_toBottomOf="@+id/account_connect_button"
+            app:layout_constraintEnd_toEndOf="@+id/account_subscribe_subscribe_button"
+            app:layout_constraintStart_toStartOf="@+id/account_subscribe_subscribe_button"
+            app:layout_constraintTop_toBottomOf="@+id/account_subscribe_subscribe_button"
             >
 
             <TextView
-                android:id="@+id/account_kungry_new_text_view"
+                android:id="@+id/account_subscribe_kungry_member_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kungry_new"
+                android:text="@string/kungry_member"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/account_subscribe_text_view"
+                android:id="@+id/account_subscribe_to_subscribe_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:fontFamily="sans-serif-black"
-                android:text="@string/to_subscribe"
+                android:text="@string/kungry_to_connect"
                 android:textColor="@color/white"
-                app:layout_constraintStart_toEndOf="@+id/account_kungry_new_text_view"
-                app:layout_constraintTop_toTopOf="@+id/account_kungry_new_text_view" />
+                app:layout_constraintStart_toEndOf="@+id/account_subscribe_kungry_member_text_view"
+                app:layout_constraintTop_toTopOf="@+id/account_subscribe_kungry_member_text_view" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

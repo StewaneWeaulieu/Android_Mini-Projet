@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navigation_map"
         android:icon="@drawable/ic_np_map"
-        android:title="@string/title_map"/>
+        android:title="@string/title_maps"/>
 
     <item
         android:id="@+id/navigation_list"

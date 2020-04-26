@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.review.ReviewCreateActivity">
+
+    <TextView
+        android:id="@+id/review_create_review_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/reviews"
+        android:textColor="#211414"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/review_create_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stepSize="1"
+        app:layout_constraintStart_toStartOf="@+id/review_create_review_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/review_create_review_text_view"
+        android:progressTint="@color/green"
+        />
+
+    <TextView
+        android:id="@+id/review_create_comment_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/comment"
+        android:textColor="#211414"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/review_create_rating_bar"
+        app:layout_constraintTop_toBottomOf="@+id/review_create_rating_bar" />
+
+    <TextView
+        android:id="@+id/review_create_comment_optional__text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/optional"
+        android:textColor="#CC211414"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/review_create_comment_text_view"
+        app:layout_constraintStart_toEndOf="@+id/review_create_comment_text_view"
+        app:layout_constraintTop_toTopOf="@+id/review_create_comment_text_view" />
+
+    <EditText
+        android:id="@+id/review_create_comment_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/review_create_add_picture_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_create_comment_text_view" />
+
+    <Button
+        android:id="@+id/review_create_submit_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/review_create_add_picture_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/review_create_submit_button"
+        app:layout_constraintStart_toStartOf="@+id/review_create_submit_button"
+        app:srcCompat="@drawable/icone_add" />
+
+    <TextView
+        android:id="@+id/review_create_add_picture_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/add_picture"
+        android:textColor="#211414"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/review_create_add_picture_image_button"
+        app:layout_constraintStart_toStartOf="@+id/review_create_add_picture_image_button" />
+
+    <TextView
+        android:id="@+id/review_create_add_picture_optional_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/optional"
+        android:textColor="#CC211414"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/review_create_add_picture_text_view"
+        app:layout_constraintStart_toEndOf="@+id/review_create_add_picture_text_view"
+        app:layout_constraintTop_toTopOf="@+id/review_create_add_picture_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
